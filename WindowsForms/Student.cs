@@ -9,10 +9,10 @@ namespace WindowsForms
 
         public string Firstname
         {
-            get { return _firstname; }
+            get => _firstname;
             set
             {
-                if (_firstname.Trim().Length > 2)
+                if (value.Trim().Length > 2)
                 {
                     _firstname = value;
                 }
@@ -27,10 +27,10 @@ namespace WindowsForms
 
         public string Lastname
         {
-            get { return _lastname; }
+            get => _lastname;
             set
             {
-                if (_lastname.Trim().Length > 2)
+                if (value.Trim().Length > 2)
                 {
                     _lastname = value;
                 }
@@ -41,16 +41,13 @@ namespace WindowsForms
             }
         }
 
-        public string Fullname
-        {
-            get { return Firstname + " " + Lastname; }
-        }
+        public string Fullname => Firstname + " " + Lastname;
 
         private string _email;
 
         public string Email
         {
-            get { return _email; }
+            get => _email;
             set
             {
                 try
