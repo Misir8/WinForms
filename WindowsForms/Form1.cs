@@ -41,9 +41,9 @@ namespace WindowsForms
                 return;
             }
             _students.Add(student);
-            FillStudentsLB();
+            FillStudentsLb();
         }
-        private void FillStudentsLB()
+        private void FillStudentsLb()
         {
             lstbStudent.Items.Clear();
             foreach ( Student stu in _students)
